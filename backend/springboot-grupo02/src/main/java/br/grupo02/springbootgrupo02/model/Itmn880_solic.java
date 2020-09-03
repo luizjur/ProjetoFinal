@@ -44,8 +44,8 @@ public class Itmn880_solic {
     @Column(name= "hora")
     private Time hora;
 
-    @Column(name="pdv_id" , nullable = false)
-    private int pdvId;
+    //@Column(name="pdv_id" , nullable = false)
+    //private int pdvId;
 
     @ManyToOne
     @JsonIgnoreProperties("solicitacoes") 
@@ -106,7 +106,7 @@ public class Itmn880_solic {
 	public void setHora(Time hora) {
 		this.hora = hora;
 	}
-
+/*
 	public int getPdvId() {
 		return pdvId;
 	}
@@ -114,7 +114,7 @@ public class Itmn880_solic {
 	public void setPdvId(int pdvId) {
 		this.pdvId = pdvId;
 	}
-
+*/
 
 	
     
