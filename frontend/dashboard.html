@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tech Insiders - Grupo 02 - Incluir Solicitações</title>
+    
+    <!-- Biblioteca em BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Biblioteca em JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Estilos locais -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- <link href="css/estilo.css" rel="stylesheet"> -->
+
+    <script src="/js/dashboard.js"></script>
+
+</head>
+<body onload="validaLogin()">
+
+    <div class="container-login100"> 
+        <div class="row w-100 align-items-center"> 
+            <div class="col-8 mx-auto">
+                <div class="jumbotron">
+                    <h1>Dashboard Gestor</h1><br>
+                    <div class="row"> 
+                        <div class="col">
+                            <div class="text-center" id="msgErro"></div>
+                        </div>
+                    </div>
+
+                    
+
+
+
+                    <div class="container h-100">
+                        <div class="row justify-content-between">
+                            <div id="foto" class="col-8">
+                                <div class="media">
+                                    <div id="imgUser"></div>
+                                    <h5>
+                                        <br>
+                                        <div id="user"></div>                                
+                                        <br>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-right">
+                                <button class="btn btn-primary" onclick="logout()">logout</button>
+                            </div>
+                        </div>
+                
+                        <div class="row" id="filtros">
+                            <div class="col-6">
+                                <select id="sel_status">
+                                    <option value='I' selected > Inicial </option>
+                                    <option value='A'> Aprovada </option>
+                                    <option value='N'> Negada </option>
+                                    <option value='C'> Cancelada </option>
+                                    <option value='T'> Todas </option>
+
+                                </select>
+                                <button class="btn btn-primary" onclick="buscarPorStatus()">Por Status</button>
+                            </div>
+                            
+                        </div>
+                
+                        <div class="row" id="tableResposta">
+                        </div>
+                
+                    </div>
+                
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

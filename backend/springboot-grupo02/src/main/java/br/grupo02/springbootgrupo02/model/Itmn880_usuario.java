@@ -27,7 +27,10 @@ public class Itmn880_usuario {
     private String senha;
 
     @Column(name="nome", length = 100, nullable = false)
-    private String nome;
+	private String nome;
+	
+	@Column(name="linkFoto", length = 200, nullable = false)
+    private String linkFoto;
 
 	public int getId() {
 		return id;
@@ -67,6 +70,14 @@ public class Itmn880_usuario {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public String getLinkFoto() {
+		return linkFoto;
+	}
+
+	public void setLinkFoto(String linkFoto) {
+		this.linkFoto = linkFoto;
 	}
 
 

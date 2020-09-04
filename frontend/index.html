@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tech Insiders - Grupo 02 - Login</title>
+    
+    <!-- Biblioteca em BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Biblioteca em JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Estilos locais -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- <link href="css/estilo.css" rel="stylesheet"> -->
+
+    <script src="/js/login.js"></script>
+
+</head>
+<body>
+    <div class="container-login100"> 
+        <div class="row w-100 align-items-center"> 
+            <div class="col-8 mx-auto">
+                <div class="jumbotron">
+                    <h1>Login</h1><br>
+                    <div class="row"> 
+                        <div class="col">
+                            <div class="text-center" id="msgErro"></div>
+                        </div>
+                    </div>
+
+                    <form>
+                        <h6>Usuário (RACF/email)</h6>
+                        <input class="form-control" type="text" id="txtUsuario" placeholder="RACF/email">
+                        <br>
+                        <h6>Senha</h6>
+                        <input class="form-control" type="password" id="txtSenha" placeholder="senha">
+                        <br>
+                        <div class="col text-center">
+                            <button class="btn btn-outline-primary" onclick="autenticar(event)"> Login</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

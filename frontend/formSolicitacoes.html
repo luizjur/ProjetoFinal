@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tech Insiders - Grupo 02 - Incluir Solicitações</title>
+    
+    <!-- Biblioteca em BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Biblioteca em JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Estilos locais -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- <link href="css/estilo.css" rel="stylesheet"> -->
+
+    <script src="/js/solicitacoes.js"></script>
+
+</head>
+<body>
+    <div class="container-login100"> 
+        <div class="row w-100 align-items-center"> 
+            <div class="col-8 mx-auto">
+                <div class="jumbotron">
+                    <h1>Nova</h1><br>
+                    <div class="row"> 
+                        <div class="col">
+                            <div class="text-center" id="msgErro"></div>
+                        </div>
+                    </div>
+
+                    <form>
+                        <h6>Técnico*</h6>
+                        <input class="form-control" type="text" id="txtTecnico" required>
+                        <br>
+                        <h6>Operadora*</h6>
+                        <input class="form-control" type="text" id="txtOperadora" required>
+                        <br>
+                        <h6>Celular/Whatsapp*</h6>
+                        <input class="form-control" type="tel" id="txtTelefone" required>
+                        <br>
+                        <table border="0" cellpadding="5" cellspacing="2" width="100%" align="center">
+                            <tr>
+                                <td>
+                                    <h6>Documento*</h6>
+                                    <input class="form-control" type="text" id="txtDoc" required>
+                                    <br>
+                                </td>
+                                <td>&nbsp;&nbsp;&nbsp;</td>
+                                <td>
+                                    <h6>PDV*</h6>
+                                    <!-- montar pesquisando PDVs -->
+                                    <select class="form-control" id="txtPDV" required>
+                                        <option value="1">PDV 1</option>
+                                        <option value="2">PDV 2</option>
+                                        <option value="3">PDV 3</option>
+                                    </select>
+                                    <br>                                      
+                                </td>
+                            </tr>
+                        </table>
+                        <table border="0" cellpadding="5" cellspacing="2" width="100%" align="center">
+                            <tr>
+                                <td>
+                                    <h6>Data*</h6>
+                                    <input class="form-control" type="date" id="txtData" required>
+                                    <br>
+                                </td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>
+                                    <h6>Hora*</h6>
+                                    <input class="form-control" type="time" id="txtHora" required>
+                                    <br>                                     
+                                </td>
+                            </tr>
+                        </table>
+
+                        <div class="col text-center">
+                            <button class="btn btn-outline-primary" onclick="solicitar(event)">Enviar Solicitação</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
