@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.grupo02.springbootgrupo02.dao.Itmn880_usuarioDAO;
+import br.grupo02.springbootgrupo02.model.Itmn880_solic;
 import br.grupo02.springbootgrupo02.model.Itmn880_usuario;
 
 @RestController
@@ -32,4 +33,7 @@ public class Itmn880_usuarioController {
             return ResponseEntity.status(403).build();
         }
     }
+
+   
+
 }

@@ -44,6 +44,10 @@ public class Itmn880_solic {
     @Column(name= "hora")
     private Time hora;
 
+	@Column(name= "status")
+    private char status;
+
+
     //@Column(name="pdv_id" , nullable = false)
     //private int pdvId;
 
@@ -115,6 +119,22 @@ public class Itmn880_solic {
 		this.pdvId = pdvId;
 	}
 */
+
+	public Itmn880_pdv getPdv() {
+		return pdv;
+	}
+
+	public void setPdv(Itmn880_pdv pdv) {
+		this.pdv = pdv;
+	}
+
+	public char getStatus() {
+		return status;
+	}
+
+	public void setStatus(char status) {
+		this.status = status;
+	}
 
 	
     

@@ -25,3 +25,12 @@ create table itmn880_solic(
    constraint pk_num_seq primary key (num_seq),
    constraint fk_id foreign key (pdv_id) references itmn880_pdv (id)
 );
+
+
+Tabela de Usuario
+login-racf
+Nome
+senha
+email
+
+
